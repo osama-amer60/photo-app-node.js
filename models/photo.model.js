@@ -14,9 +14,10 @@ const photoSchema = new Schema({
     type: Number,
     default: 0,
   },
-  up:[{ type: Types.ObjectId, ref: "user"}],
-  down:[{ type: Types.ObjectId, ref: "user"}]
+  up: [{ type: Types.ObjectId, ref: "user" }],
+  down: [{ type: Types.ObjectId, ref: "user" }],
 });
 
 const Photo = model("photo", photoSchema);
+
 module.exports = Photo;
